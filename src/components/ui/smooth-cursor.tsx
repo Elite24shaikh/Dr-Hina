@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { motion, useSpring } from "framer-motion"
 
 interface Position {
@@ -22,7 +22,7 @@ function isTrackablePointer(pointerType: string) {
   return pointerType !== "touch"
 }
 
-const DefaultCursorSVG: FC = () => {
+const DefaultCursorSVG: React.FC = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
