@@ -2,13 +2,15 @@ import { Sparkles, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import GooeyNav from "./GooeyNav";
+import logoImg from "../assets/LOGO.png";
 
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
   { label: "Programs", href: "#programs-section" },
-  { label: "Features", href: "#features" },
+  { label: "Results", href: "#results" },
   // { label: "Services", href: "#services-section" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export function Navbar() {
@@ -29,14 +31,14 @@ export function Navbar() {
       >
         <div
           className={`max-w-[900px] mx-auto flex items-center justify-between rounded-full px-6 py-3 transition-all duration-500 ${scrolled
-            ? "bg-white/70 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-white/30"
-            : "bg-transparent"
+            ? "bg-white/90 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-emerald-900/10"
+            : "bg-white border border-black/5 shadow-sm"
             }`}
         >
           {/* Left: Logo */}
           <div className="flex items-center gap-2 text-foreground shrink-0">
-            <Sparkles className="w-5 h-5" />
-            <span className="font-heading font-semibold text-lg tracking-wide">
+            <img src={logoImg} alt="Logo" className="h-8 w-auto object-contain" />
+            <span className="font-heading font-semibold text-lg tracking-wide text-emerald-950">
               Medimorphic
             </span>
           </div>

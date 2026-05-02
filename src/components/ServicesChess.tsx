@@ -1,12 +1,15 @@
 import { GlassBadge } from "./GlassBadge";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import weightLossImg from "../assets/WeightLoss.jpg";
+import gainImg from "../assets/gain.jpg";
+import detoxImg from "../assets/detox.jpg";
 
 const programs = [
   {
     title: "Weight Loss Program",
     desc: "A sustainable, science-backed approach to burning fat and building lean muscle — without crash diets. Real food, real results, guided by clinical expertise.",
-    img: "../assets/weight.jpg",
+    img: weightLossImg,
     tag: "Most Popular",
     tagColor: "bg-emerald-50 text-emerald-700 border-emerald-100",
     reverse: false,
@@ -14,7 +17,7 @@ const programs = [
   {
     title: "Weight Gain Program",
     desc: "Healthy, calorie-dense meal plans designed to help you build lean muscle mass safely and effectively with expert nutritional support and tracking.",
-    img: "#",
+    img: gainImg,
     tag: "For Athletes",
     tagColor: "bg-sky-50 text-sky-700 border-sky-100",
     reverse: true,
@@ -22,7 +25,7 @@ const programs = [
   {
     title: "Detox & Reset Plan",
     desc: "Cleanse your body, boost your immune system, and regain your natural energy with our science-backed guided detox protocols and daily tracking.",
-    img: "#",
+    img: detoxImg,
     tag: "7-Day Reset",
     tagColor: "bg-purple-50 text-purple-700 border-purple-100",
     reverse: false,

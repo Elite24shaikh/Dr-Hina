@@ -2,6 +2,33 @@ import { GlassBadge } from "./GlassBadge";
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 import { ShieldCheck, UserCheck, TrendingUp, Award } from "lucide-react";
+import img1 from "../assets/1.jpg";
+import img2 from "../assets/2.jpg";
+import img3 from "../assets/3.jpg";
+import img4 from "../assets/4.jpg";
+import img5 from "../assets/5.jpg";
+import img6 from "../assets/6.jpg";
+
+function ImageMarquee() {
+  const degreeImages = [img1, img2, img3, img4, img5, img6];
+
+  return (
+    <div className="relative overflow-hidden py-8 rounded-[24px] mb-16 bg-white/5 p-4 backdrop-blur-sm border border-emerald-500/10">
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-emerald-50 to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-emerald-50 to-transparent z-10 pointer-events-none" />
+      <div className="flex animate-marquee gap-8 whitespace-nowrap px-4">
+        {[...degreeImages, ...degreeImages].map((src, idx) => (
+          <img
+            key={idx}
+            src={src}
+            alt={`Degree ${idx + 1}`}
+            className="h-48 md:h-64 w-auto object-contain rounded-lg opacity-90 transition-opacity hover:opacity-100"
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 /* ---- Animated Counter ---- */
 function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: string }) {
@@ -147,6 +174,8 @@ export function TrustBento() {
             </motion.div>
           ))}
         </div>
+
+        <ImageMarquee />
 
         {/* Marquee */}
         <div className="relative overflow-hidden py-6 rounded-[20px]">

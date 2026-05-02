@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Lenis from "lenis";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
+import { MarqueeReviews } from "./components/MarqueeReviews";
 import { AppShowcase } from "./components/AppShowcase";
 import { DraggablePhoneMockups } from "./components/DraggablePhoneMockups";
 import { HowItWorks } from "./components/HowItWorks";
@@ -14,6 +15,8 @@ import { TransformationGallery } from "./components/TransformationGallery";
 // import { Testimonials } from "./components/Testimonials";
 import { FinalCTA } from "./components/FinalCTA";
 import { Footer } from "./components/Footer";
+import { SmoothCursor } from "./components/ui/smooth-cursor";
+
 function App() {
   useEffect(() => {
     const lenis = new Lenis({
@@ -34,11 +37,15 @@ function App() {
 
   return (
     <div className="bg-background text-foreground overflow-hidden">
+      <SmoothCursor />
       <Navbar />
       <main className="flex flex-col gap-6 md:gap-8">
         <div id="home">
           <Hero />
         </div>
+        
+        <MarqueeReviews />
+
         {/* White sections */}
         <div id="about" className="flex flex-col gap-6 md:gap-8 px-3 md:px-5">
           <AppShowcase />

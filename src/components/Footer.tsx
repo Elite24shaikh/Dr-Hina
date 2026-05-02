@@ -4,13 +4,14 @@ import {
   MessageCircle,
   MapPin,
 } from "lucide-react";
+import logoImg from "../assets/LOGO.png";
 
 const quickLinks = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Services", href: "#services-section" },
+  // { label: "Services", href: "#services-section" },
   { label: "Programs", href: "#programs-section" },
-  { label: "Results", href: "#results-section" },
+  { label: "Results", href: "#results" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -18,6 +19,7 @@ const legalLinks = [
   { label: "Privacy Policy", href: "#" },
   { label: "Disclaimer", href: "#" },
   { label: "Terms & Conditions", href: "#" },
+  { label: "Refund Policy", href: "#" },
 ];
 
 const socialLinks = [
@@ -56,9 +58,7 @@ export function Footer() {
             {/* Brand */}
             <div className="md:col-span-2 flex flex-col items-start">
               <div className="flex items-center gap-2.5 mb-6">
-                <div className="w-9 h-9 rounded-[14px] bg-emerald-500/20 flex items-center justify-center">
-                  <Sparkles className="w-4 h-4 text-emerald-400" />
-                </div>
+                <img src={logoImg} alt="Logo" className="h-10 w-auto object-contain" />
                 <span className="font-heading font-semibold text-xl text-black">
                   Medimorphic Clinic
                 </span>
@@ -111,13 +111,13 @@ export function Footer() {
               </h4>
               <div className="space-y-5 font-body text-sm text-black/80 font-light">
                 <a
-                  href="tel:+#"
+                  href="#"
                   className="flex items-center gap-3 hover:text-black/40 transition-colors duration-300"
                 >
                   <div className="w-9 h-9 rounded-[12px] bg-emerald-500/10 flex items-center justify-center shrink-0">
                     <Phone className="w-3.5 h-3.5 text-emerald-400" />
                   </div>
-                  #                </a>
+                  +91-7021838835</a>
                 <a
                   href="https://wa.me/#?text=Hello%20Dr.%20Hina%2C%0A%0AI%20am%20reaching%20out%20after%20visiting%20your%20official%20website.%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20consultation%20and%20treatment%20programs.%0A%0AThank%20you."
                   target="_blank"

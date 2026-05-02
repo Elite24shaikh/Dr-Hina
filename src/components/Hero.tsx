@@ -57,7 +57,7 @@ export function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.25, duration: 0.7 }}
-              className="font-body text-lg md:text-xl text-foreground/60 mb-10 max-w-lg font-light leading-[1.8]"
+              className="font-body text-lg md:text-md text-foreground/60 mb-10 max-w-lg font-light leading-[1.8]"
             >
               A Doctor With Years of Clinical Experience <br /> And With A System designed around your life, your habits &amp; your pace.
             </motion.p>
@@ -69,7 +69,7 @@ export function Hero() {
               className="flex items-center gap-4"
             >
               <MagneticButton className="btn-premium bg-emerald-950 text-white hover:bg-emerald-900 rounded-full pl-8 pr-2 py-3 font-body text-lg font-medium flex items-center justify-center gap-4 group">
-                Explore now
+                Get Your Free Plan
                 <div className="bg-white/15 rounded-full p-2.5 group-hover:bg-white/25 transition-colors duration-300">
                   <ArrowRight className="w-5 h-5 text-white" />
                 </div>
@@ -102,7 +102,7 @@ export function Hero() {
                 ))}
               </div>
               <div>
-                <p className="font-body text-sm font-semibold text-foreground">500+ Happy Clients</p>
+                <p className="font-body text-sm font-semibold text-foreground">200+ Happy Clients</p>
                 <p className="font-body text-xs text-foreground/40 font-light">Trusted by families across India</p>
               </div>
             </motion.div>

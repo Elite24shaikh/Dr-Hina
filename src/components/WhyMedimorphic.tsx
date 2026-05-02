@@ -130,19 +130,7 @@ const bentoCards = [
 
 export function WhyMedimorphic() {
   return (
-    <section className="relative py-20 md:py-28 overflow-hidden rounded-[28px] mx-0" style={{
-      background: 'linear-gradient(165deg, #1a1a2e 0%, #16213e 35%, #0f3d3e 70%, #1a3c34 100%)',
-    }}>
-      {/* Subtle noise texture overlay */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{
-          backgroundImage: 'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
-          backgroundSize: '32px 32px',
-        }}
-      />
-      {/* Warm glow accents */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-emerald-500/[0.04] blur-[150px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-teal-400/[0.03] blur-[120px] pointer-events-none" />
+    <section className="relative py-20 md:py-28 overflow-hidden rounded-[28px] mx-0 bg-[#0f2d20]">
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         {/* Header */}
@@ -170,9 +158,9 @@ export function WhyMedimorphic() {
           {whyNotItems.map((item, i) => (
             <div
               key={i}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm bg-rose-500/[0.08] border border-rose-400/[0.12] text-rose-300/80"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm bg-white-500/10 border border-white/10 text-white"
             >
-              <span className="text-rose-400/70">{item.icon}</span>
+              <span className="text-white-400/70">{item.icon}</span>
               <span className="font-body font-medium">
                 {item.text}
               </span>
@@ -190,23 +178,18 @@ export function WhyMedimorphic() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: i * 0.08, duration: 0.45 }}
-                className={`premium-card rounded-[24px] p-8 group relative ${card.className}`}
-                style={{
-                  background: 'rgba(255, 255, 255, 0.03)',
-                  border: '1px solid rgba(255, 255, 255, 0.06)',
-                  backdropFilter: 'blur(12px)',
-                }}
+                className={`rounded-[24px] p-8 group relative bg-white shadow-xl ${card.className}`}
               >
                 {/* Top */}
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-[14px] bg-white/[0.06] flex items-center justify-center text-emerald-300/80">
+                  <div className="w-10 h-10 rounded-[14px] bg-emerald-50 flex items-center justify-center text-emerald-600">
                     {card.icon}
                   </div>
                   <div>
-                    <h3 className="font-heading font-semibold text-xl text-white/90">
+                    <h3 className="font-heading font-semibold text-xl text-emerald-950">
                       {card.title}
                     </h3>
-                    <p className="font-body text-xs text-white/25">
+                    <p className="font-body text-xs text-emerald-900/60">
                       {card.subtitle}
                     </p>
                   </div>
@@ -214,21 +197,20 @@ export function WhyMedimorphic() {
 
                 {/* Items */}
                 <div
-                  className={`space-y-3 ${
-                    card.className.includes("col-span-3")
-                      ? "grid sm:grid-cols-2 lg:grid-cols-3 gap-3 space-y-0"
-                      : ""
-                  }`}
+                  className={`space-y-3 ${card.className.includes("col-span-3")
+                    ? "grid sm:grid-cols-2 lg:grid-cols-3 gap-3 space-y-0"
+                    : ""
+                    }`}
                 >
                   {card.items.map((item, j) => (
                     <div
                       key={j}
                       className="flex items-start gap-3 group/item"
                     >
-                      <div className="w-7 h-7 rounded-[10px] bg-white/[0.04] flex items-center justify-center shrink-0 text-white/30 mt-0.5">
+                      <div className="w-7 h-7 rounded-[10px] bg-emerald-50 flex items-center justify-center shrink-0 text-emerald-600/70 mt-0.5">
                         {item.icon}
                       </div>
-                      <p className="font-body text-sm text-white/40 font-light leading-[1.8]">
+                      <p className="font-body text-sm text-emerald-950/70 font-light leading-[1.8]">
                         {item.text}
                       </p>
                     </div>
@@ -236,7 +218,7 @@ export function WhyMedimorphic() {
                 </div>
 
                 {/* Hover line accent */}
-                <div className="absolute bottom-0 left-8 right-8 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute bottom-0 left-8 right-8 h-[1px] bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </motion.div>
             );
           })}
