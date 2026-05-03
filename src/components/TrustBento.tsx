@@ -21,7 +21,7 @@ function ImageMarquee() {
           <img
             key={idx}
             src={src}
-            alt={`Degree ${idx + 1}`}
+            alt={`Degree ${String(idx + 1)}`}
             className="h-48 md:h-64 w-auto object-contain rounded-lg opacity-90 transition-opacity hover:opacity-100"
           />
         ))}
@@ -64,9 +64,9 @@ function AnimatedCounter({ target, suffix = "" }: { target: number; suffix?: str
 
 /* ---- Stats Data ---- */
 const stats = [
-  { value: 10000, suffix: "+", unit: "kgs", label: "Total Weight Lost", desc: "Across all programs" },
+  { value: 200, suffix: "+", unit: "kgs", label: "Total Weight Lost", desc: "Across all programs" },
   { value: 98, suffix: "%", unit: "", label: "Success Rate", desc: "Sustained long-term results" },
-  { value: 5000, suffix: "+", unit: "", label: "Active Users", desc: "And growing every day" },
+  { value: 100, suffix: "+", unit: "", label: "Active Users", desc: "And growing every day" },
 ];
 
 /* ---- Trust Features ---- */

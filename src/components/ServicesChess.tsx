@@ -1,6 +1,6 @@
 import { GlassBadge } from "./GlassBadge";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+
 import weightLossImg from "../assets/WeightLoss.jpg";
 import gainImg from "../assets/gain.jpg";
 import detoxImg from "../assets/detox.jpg";
@@ -79,12 +79,12 @@ export function ServicesChess() {
                 <p className="font-body text-foreground/60 text-base mb-8 max-w-md leading-[1.8] font-light">
                   {prog.desc}
                 </p>
-                <button className="btn-premium bg-foreground text-white rounded-full pl-6 pr-2 py-2.5 font-body text-sm font-medium hover:bg-foreground/90 flex items-center gap-4 group">
+                {/* <button className="btn-premium bg-foreground text-white rounded-full pl-6 pr-2 py-2.5 font-body text-sm font-medium hover:bg-foreground/90 flex items-center gap-4 group">
                   Learn More
                   <div className="bg-white/10 rounded-full p-2 group-hover:bg-white/20 transition-colors duration-300">
                     <ArrowRight className="w-4 h-4 text-white" />
                   </div>
-                </button>
+                </button> */}
               </div>
             </motion.div>
           ))}

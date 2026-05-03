@@ -169,7 +169,7 @@ export function ProgramCards() {
                 {/* Footer / CTA row */}
                 <div className="flex items-center gap-3 mt-auto pt-4">
                   <button
-                    onClick={() => setSelectedPlan(prog.id === "90-days" ? "gold" : "silver")}
+                    onClick={() => { setSelectedPlan(prog.id === "90-days" ? "gold" : "silver"); }}
                     className="flex-1 bg-white/10 text-white px-4 py-3 rounded-xl font-body text-sm font-medium hover:bg-white/20 transition-colors text-center"
                   >
                     Learn More
@@ -196,7 +196,7 @@ export function ProgramCards() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              onClick={() => setSelectedPlan(null)}
+              onClick={() => { setSelectedPlan(null); }}
               className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             />
             <motion.div
@@ -207,7 +207,7 @@ export function ProgramCards() {
             >
               <div className={`p-6 md:p-8 text-white ${selectedPlan === "gold" ? "bg-gradient-to-br from-amber-500 to-amber-700" : "bg-gradient-to-br from-[#1b3b2b] to-[#0f2319]"}`}>
                 <button 
-                  onClick={() => setSelectedPlan(null)}
+                  onClick={() => { setSelectedPlan(null); }}
                   className="absolute top-5 right-5 w-8 h-8 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/40 transition text-white"
                 >
                   <X className="w-5 h-5" />

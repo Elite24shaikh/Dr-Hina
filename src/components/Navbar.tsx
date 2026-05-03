@@ -1,4 +1,4 @@
-import { Sparkles, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import GooeyNav from "./GooeyNav";
@@ -18,9 +18,9 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 50);
+    const handler = () => { setScrolled(window.scrollY > 50); };
     window.addEventListener("scroll", handler, { passive: true });
-    return () => window.removeEventListener("scroll", handler);
+    return () => { window.removeEventListener("scroll", handler); };
   }, []);
 
   return (
@@ -66,14 +66,16 @@ export function Navbar() {
               Explore
             </a> */}
             <a
-              href="#contact"
+              href="https://wa.me/917021838835?text=Hello%20Dr.%20Hina%2C%0A%0AI%20am%20reaching%20out%20after%20visiting%20your%20official%20website.%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20consultation%20and%20treatment%20programs.%0A%0AThank%20you."
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden sm:block rounded-full px-6 py-2.5 font-body text-sm font-medium bg-[#143928] text-white hover:bg-[#1f4a36] transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-0.5"
             >
               Get Started
             </a>
 
             <button
-              onClick={() => setOpen(!open)}
+              onClick={() => { setOpen(!open); }}
               className="lg:hidden w-9 h-9 rounded-full flex items-center justify-center text-foreground hover:bg-foreground/5 transition-colors"
               aria-label="Toggle menu"
             >
@@ -98,7 +100,7 @@ export function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  onClick={() => setOpen(false)}
+                  onClick={() => { setOpen(false); }}
                   className="font-body text-base text-foreground/80 hover:text-foreground px-4 py-3 rounded-2xl hover:bg-foreground/5 transition-all duration-300"
                 >
                   {link.label}
@@ -106,11 +108,13 @@ export function Navbar() {
               ))}
               <hr className="border-foreground/10 my-2" />
               <a
-                href="#contact"
-                onClick={() => setOpen(false)}
+                href="https://wa.me/917021838835?text=Hello%20Dr.%20Hina%2C%0A%0AI%20am%20reaching%20out%20after%20visiting%20your%20official%20website.%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20consultation%20and%20treatment%20programs.%0A%0AThank%20you."
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => { setOpen(false); }}
                 className="bg-foreground text-white rounded-full px-6 py-3 font-body text-sm font-medium text-center hover:bg-foreground/90 transition-all"
               >
-                Sign up
+                Get Started
               </a>
             </div>
           </motion.div>

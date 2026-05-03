@@ -90,10 +90,10 @@ export function TransformationGallery() {
               >
                 {/* Image header */}
                 <div className="relative h-64 w-full shrink-0">
-                  <img src={img} alt={`Transformation ${i + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={img} alt={`Transformation ${String(i + 1)}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80" />
 
-                  {data && (
+                  {i < detailedTransformations.length && (
                     <div className="absolute bottom-5 left-5 right-5">
                       <div className="flex items-center justify-between mb-2">
                         <span className={`tag-pill text-[10px] font-body font-semibold ${data.accent} border-none`}>
@@ -113,7 +113,7 @@ export function TransformationGallery() {
                 </div>
 
                 {/* Content */}
-                {data && (
+                {i < detailedTransformations.length && (
                   <div className="p-5 flex flex-col flex-grow justify-between">
                     <p className="font-body text-sm text-foreground/70 leading-[1.6] font-light italic mb-4">
                       "{data.quote}"

@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowDown, Star, Shield, Leaf, Heart, Users } from "lucide-react";
+import { ArrowRight, ArrowDown, Users } from "lucide-react";
 import { motion } from "framer-motion";
 import { MagneticButton } from "./MagneticButton";
 import heroImg from "../assets/DImage.jpeg";
@@ -68,7 +68,7 @@ export function Hero() {
               transition={{ delay: 0.4, duration: 0.5 }}
               className="flex items-center gap-4"
             >
-              <MagneticButton className="btn-premium bg-emerald-950 text-white hover:bg-emerald-900 rounded-full pl-8 pr-2 py-3 font-body text-lg font-medium flex items-center justify-center gap-4 group">
+              <MagneticButton onClick={() => window.open("https://wa.me/917021838835?text=Hello%20Dr.%20Hina%2C%0A%0AI%20am%20reaching%20out%20after%20visiting%20your%20official%20website.%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20consultation%20and%20treatment%20programs.%0A%0AThank%20you.", "_blank")} className="btn-premium bg-emerald-950 text-white hover:bg-emerald-900 rounded-full pl-8 pr-2 py-3 font-body text-lg font-medium flex items-center justify-center gap-4 group">
                 Get Your Free Plan
                 <div className="bg-white/15 rounded-full p-2.5 group-hover:bg-white/25 transition-colors duration-300">
                   <ArrowRight className="w-5 h-5 text-white" />

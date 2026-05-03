@@ -111,7 +111,7 @@ export function Footer() {
               </h4>
               <div className="space-y-5 font-body text-sm text-black/80 font-light">
                 <a
-                  href="#"
+                  href="tel:+917021838835"
                   className="flex items-center gap-3 hover:text-black/40 transition-colors duration-300"
                 >
                   <div className="w-9 h-9 rounded-[12px] bg-emerald-500/10 flex items-center justify-center shrink-0">
@@ -119,7 +119,7 @@ export function Footer() {
                   </div>
                   +91-7021838835</a>
                 <a
-                  href="https://wa.me/#?text=Hello%20Dr.%20Hina%2C%0A%0AI%20am%20reaching%20out%20after%20visiting%20your%20official%20website.%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20consultation%20and%20treatment%20programs.%0A%0AThank%20you."
+                  href="https://wa.me/917021838835?text=Hello%20Dr.%20Hina%2C%0A%0AI%20am%20reaching%20out%20after%20visiting%20your%20official%20website.%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20consultation%20and%20treatment%20programs.%0A%0AThank%20you."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 hover:text-black/40 transition-colors duration-300"

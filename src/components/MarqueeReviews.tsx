@@ -26,7 +26,7 @@ export function MarqueeReviews() {
           {[...reviews, ...reviews].map((review, idx) => (
             <div key={idx} className="mx-4 w-[350px] md:w-[450px] p-6 rounded-2xl bg-white shadow-lg border border-emerald-900/10 flex flex-col whitespace-normal">
               <div className="flex text-amber-400 mb-3">
-                {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
+                {Array.from({ length: 5 }).map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
               </div>
               <p className="text-sm font-body text-black leading-relaxed line-clamp-4">"{review.replace(/^Review \d+ : /, '')}"</p>
             </div>

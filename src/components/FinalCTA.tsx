@@ -32,7 +32,7 @@ export function FinalCTA() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             {/* Primary CTA — Download / WhatsApp */}
-            <MagneticButton className="btn-premium bg-white text-foreground rounded-full pl-8 pr-2 py-3 font-body text-base font-medium hover:bg-emerald-50 flex items-center gap-4 group">
+            <MagneticButton onClick={() => window.open("https://wa.me/917021838835?text=Hello%20Dr.%20Hina%2C%0A%0AI%20am%20reaching%20out%20after%20visiting%20your%20official%20website.%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20consultation%20and%20treatment%20programs.%0A%0AThank%20you.", "_blank")} className="btn-premium bg-white text-foreground rounded-full pl-8 pr-2 py-3 font-body text-base font-medium hover:bg-emerald-50 flex items-center gap-4 group">
               Download App
               <div className="bg-foreground rounded-full p-2.5 group-hover:bg-emerald-900 transition-colors duration-300">
                 <ArrowRight className="w-5 h-5 text-white" />
@@ -41,7 +41,7 @@ export function FinalCTA() {
 
             {/* Secondary — Book Consultation (WhatsApp placeholder) */}
             <a
-              href="#"
+              href="https://wa.me/917021838835?text=Hello%20Dr.%20Hina%2C%0A%0AI%20am%20reaching%20out%20after%20visiting%20your%20official%20website.%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20consultation%20and%20treatment%20programs.%0A%0AThank%20you."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-premium border border-white/20 text-white rounded-full px-8 py-3.5 font-body text-base font-medium hover:bg-white/10"

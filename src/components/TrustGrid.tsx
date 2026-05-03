@@ -23,7 +23,7 @@ export function TrustGrid() {
             <p className="font-body text-foreground/60 text-base mb-8 max-w-md font-light leading-relaxed">
               We combine medical knowledge with modern technology to provide you with the safest, most effective health journey possible.
             </p>
-            <button className="bg-emerald-950 text-white rounded-full pl-6 pr-2 py-2 font-body text-sm font-medium hover:bg-emerald-900 transition-all flex items-center gap-4 group">
+            <button onClick={() => window.open("https://wa.me/917021838835?text=Hello%20Dr.%20Hina%2C%0A%0AI%20am%20reaching%20out%20after%20visiting%20your%20official%20website.%0A%0AI%20would%20like%20to%20know%20more%20about%20your%20consultation%20and%20treatment%20programs.%0A%0AThank%20you.", "_blank")} className="bg-emerald-950 text-white rounded-full pl-6 pr-2 py-2 font-body text-sm font-medium hover:bg-emerald-900 transition-all flex items-center gap-4 group">
               Meet the Team
               <div className="bg-white/10 rounded-full p-2 group-hover:bg-white/20 transition-colors">
                 <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

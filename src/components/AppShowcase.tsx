@@ -105,7 +105,7 @@ export function AppShowcase() {
               {features.map((feat, i) => (
                 <button
                   key={i}
-                  onClick={() => setActiveIndex(i)}
+                  onClick={() => { setActiveIndex(i); }}
                   className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-body font-medium transition-all duration-300 ${i === activeIndex
                     ? `${feat.activeBg} text-white shadow-lg`
                     : "bg-foreground/5 text-foreground/50 hover:bg-foreground/10"
@@ -142,7 +142,7 @@ export function AppShowcase() {
                   {features.map((_, j) => (
                     <button
                       key={j}
-                      onClick={() => setActiveIndex(j)}
+                      onClick={() => { setActiveIndex(j); }}
                       className={`h-1.5 rounded-full transition-all duration-500 ${j === activeIndex ? "w-10 bg-foreground" : "w-3 bg-foreground/15 hover:bg-foreground/30"
                         }`}
                     />

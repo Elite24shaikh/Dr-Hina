@@ -158,7 +158,7 @@ const GooeyNav = ({
     });
 
     resizeObserver.observe(containerRef.current);
-    return () => resizeObserver.disconnect();
+    return () => { resizeObserver.disconnect(); };
   }, [activeIndex]);
 
   return (
@@ -169,8 +169,8 @@ const GooeyNav = ({
             <li key={index} className={activeIndex === index ? 'active' : ''}>
               <a
                 href={item.href}
-                onClick={(e) => handleClick(e, index)}
-                onKeyDown={(e) => handleKeyDown(e, index)}
+                onClick={(e) => { handleClick(e, index); }}
+                onKeyDown={(e) => { handleKeyDown(e, index); }}
               >
                 {item.label}
               </a>

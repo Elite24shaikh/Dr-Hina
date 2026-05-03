@@ -25,10 +25,10 @@
       1);
 
   /* Gooey particle colors — soft emerald palette */
-  --color-1: #054521;
-  --color-2: #073118;
-  --color-3: #0c2a17;
-  --color-4: #0e5833;
+  --color-1: #022d15;
+  --color-2: #e1f3e8;
+  --color-3: #72c193;
+  --color-4: #2ac36c;
 }
 
 .gooey-nav-container {
