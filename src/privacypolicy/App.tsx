@@ -56,6 +56,7 @@ function App() {
           <li>First name and last name</li>
           <li>Address, State, Province, ZIP/Postal code, City</li>
           </li>
+          <li><strong>Health & Dietary Information:</strong> Height, Weight, Dietary preferences.</li>
           {/* <li><strong>Educational Information:</strong> Information about your academic background, skills, and job preferences.</li> */}
           <li><strong>Usage Data:</strong> Information about how you interact with the app, including log data and device information.</li>
         </ul>
