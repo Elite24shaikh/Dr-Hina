@@ -1,5 +1,4 @@
 import {
-  Sparkles,
   Phone,
   MessageCircle,
   MapPin,
@@ -16,7 +15,7 @@ const quickLinks = [
 ];
 
 const legalLinks = [
-  { label: "Privacy Policy", href: "#" },
+  { label: "Privacy Policy", href: "/privacypolicy" },
   { label: "Disclaimer", href: "#" },
   { label: "Terms & Conditions", href: "#" },
   { label: "Refund Policy", href: "#" },

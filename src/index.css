@@ -37,6 +37,48 @@
 }
 
 @layer components {
+  .privacy-page {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #222;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  .privacy-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .privacy-container h1 {
+    text-align: center;
+  }
+
+  .privacy-container h2 {
+    color: #333;
+  }
+
+  .privacy-container p {
+    margin: 10px 0;
+  }
+
+  .privacy-contact {
+    margin-top: 20px;
+  }
+
+  .privacy-footer {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+
   /* ----- HEALTH GLASS ---- */
   .health-glass {
     background: rgba(255, 255, 255, 0.6);
