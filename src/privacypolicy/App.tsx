@@ -1,4 +1,4 @@
-function PrivacyPolicy() {
+function App() {
   const sections = [
     "Information We Collect",
     "How We Use Your Information",
@@ -138,4 +138,4 @@ function PrivacyPolicy() {
   );
 }
 
-export default PrivacyPolicy;
+export default App;
