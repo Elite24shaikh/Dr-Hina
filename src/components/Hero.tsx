@@ -59,7 +59,7 @@ export function Hero() {
               transition={{ delay: 0.25, duration: 0.7 }}
               className="font-body text-lg md:text-md text-foreground/60 mb-10 max-w-lg font-light leading-[1.8]"
             >
-              A Doctor With Years of Clinical Experience <br /> And With A System designed around your life, your habits &amp; your pace.
+              A Doctor With Years of Clinical Experience <br /> And With A System designed around your life, your habits &amp; your pace that can lead to better health outcomes.
             </motion.p>
 
             <motion.div
