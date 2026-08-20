@@ -39,44 +39,246 @@
 @layer components {
   .privacy-page {
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #222;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background: #f8faf7;
+    color: #143928;
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.7;
+    padding: 28px clamp(20px, 5vw, 80px) 48px;
+  }
+
+  .privacy-header {
+    align-items: center;
+    border-bottom: 1px solid rgba(20, 57, 40, 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 0 0 22px;
+  }
+
+  .privacy-brand,
+  .privacy-home-link,
+  .privacy-aside a,
+  .privacy-footer a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .privacy-brand {
+    align-items: center;
+    display: flex;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 10px;
+  }
+
+  .privacy-brand-mark {
+    align-items: center;
+    background: #143928;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 16px;
+    height: 32px;
+    justify-content: center;
+    width: 32px;
+  }
+
+  .privacy-home-link {
+    color: rgba(20, 57, 40, 0.65);
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
+  }
+
+  .privacy-home-link:hover,
+  .privacy-footer a:hover {
+    color: #10b981;
+  }
+
+  .privacy-layout {
+    display: grid;
+    gap: clamp(40px, 8vw, 140px);
+    grid-template-columns: minmax(150px, 200px) minmax(0, 720px);
+    margin: 0 auto;
+    max-width: 1060px;
+    padding: 92px 0 110px;
+  }
+
+  .privacy-aside {
+    align-self: start;
+    position: sticky;
+    top: 28px;
+  }
+
+  .privacy-eyebrow {
+    color: #10a875;
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .privacy-aside nav {
+    display: grid;
+    gap: 8px;
+  }
+
+  .privacy-aside a {
+    color: rgba(20, 57, 40, 0.48);
+    display: flex;
+    font-size: 11px;
+    gap: 10px;
+    line-height: 1.35;
+    transition: color 0.2s ease;
+  }
+
+  .privacy-aside a span {
+    color: rgba(20, 57, 40, 0.28);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .privacy-aside a:hover {
+    color: #10a875;
   }
 
   .privacy-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
+    min-width: 0;
+  }
+
+  .privacy-intro {
+    border-bottom: 1px solid rgba(20, 57, 40, 0.12);
+    margin-bottom: 54px;
+    padding-bottom: 48px;
   }
 
   .privacy-container h1 {
-    text-align: center;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(56px, 8vw, 94px);
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    line-height: 0.9;
+    margin: 0 0 30px;
   }
 
-  .privacy-container h2 {
-    color: #333;
+  .privacy-container h1 em {
+    color: #10a875;
+    font-style: italic;
   }
 
-  .privacy-container p {
-    margin: 10px 0;
+  .privacy-lead {
+    color: rgba(20, 57, 40, 0.72);
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 24px;
+    max-width: 560px;
+  }
+
+  .privacy-date {
+    color: rgba(20, 57, 40, 0.45);
+    font-size: 11px;
+    margin: 0;
+  }
+
+  .privacy-date strong {
+    color: #143928;
+    font-weight: 600;
+    margin-right: 12px;
+  }
+
+  .privacy-content > p:first-child {
+    color: rgba(20, 57, 40, 0.68);
+    font-size: 15px;
+    margin: 0 0 48px;
+  }
+
+  .privacy-content h2 {
+    border-top: 1px solid rgba(20, 57, 40, 0.1);
+    color: #143928;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 42px 0 14px;
+    padding-top: 26px;
+    scroll-margin-top: 28px;
+  }
+
+  .privacy-content p,
+  .privacy-content li {
+    color: rgba(20, 57, 40, 0.68);
+    font-size: 14px;
+  }
+
+  .privacy-content p {
+    margin: 0 0 14px;
+  }
+
+  .privacy-content ul {
+    margin: 0 0 28px;
+    padding-left: 20px;
+  }
+
+  .privacy-content li {
+    margin: 8px 0;
+    padding-left: 4px;
+  }
+
+  .privacy-content strong {
+    color: #143928;
+    font-weight: 600;
   }
 
   .privacy-contact {
-    margin-top: 20px;
+    background: rgba(16, 185, 129, 0.08);
+    border-left: 2px solid #10b981;
+    padding: 18px 20px;
   }
 
   .privacy-footer {
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+    border-top: 1px solid rgba(20, 57, 40, 0.1);
+    color: rgba(20, 57, 40, 0.42);
+    display: flex;
+    font-size: 11px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1060px;
+    padding-top: 22px;
+  }
+
+  @media (max-width: 760px) {
+    .privacy-page {
+      padding: 20px 20px 34px;
+    }
+
+    .privacy-layout {
+      display: block;
+      padding: 58px 0 72px;
+    }
+
+    .privacy-aside {
+      margin-bottom: 56px;
+      position: static;
+    }
+
+    .privacy-aside nav {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .privacy-intro {
+      margin-bottom: 42px;
+      padding-bottom: 38px;
+    }
+
+    .privacy-footer {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 8px;
+    }
   }
 
   /* ----- HEALTH GLASS ---- */
