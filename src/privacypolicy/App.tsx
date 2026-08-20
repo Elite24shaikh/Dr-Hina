@@ -49,10 +49,14 @@ function App() {
         <p><strong>Medimorphic</strong> is a system-driven digital health platform dedicated to transforming lives through personalised nutrition, smart tracking, and expert guidance by Dr. Hina Ansari.</p>
 
         <h2 id="section-1">1. Information We Collect</h2>
-        <p>We collect information from you when you use our app, including:</p>
+        <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
         <ul>
-          <li><strong>Personal Information:</strong> Name, email address, phone number, and other contact information.</li>
-          <li><strong>Educational Information:</strong> Information about your academic background, skills, and job preferences.</li>
+          <li><strong>Personal Information:</strong> 
+          <li>Email address</li>
+          <li>First name and last name</li>
+          <li>Address, State, Province, ZIP/Postal code, City</li>
+          </li>
+          {/* <li><strong>Educational Information:</strong> Information about your academic background, skills, and job preferences.</li> */}
           <li><strong>Usage Data:</strong> Information about how you interact with the app, including log data and device information.</li>
         </ul>
 
@@ -71,9 +75,9 @@ function App() {
         <p>We do not sell or rent your personal information to third parties. We may share your information with:</p>
         <ul>
           <li><strong>Service Providers:</strong> Third-party vendors who help us provide our services, such as cloud storage and analytics providers.</li>
-          <li><strong>Employers and Educational Institutions:</strong> To match you with job opportunities and educational resources.</li>
+          {/* <li><strong>Employers and Educational Institutions:</strong> To match you with job opportunities and educational resources.</li> */}
           <li><strong>Legal Requirements:</strong> When required by law or in response to a legal process.</li>
-          <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of all or a portion of our assets.</li>
+          {/* <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of all or a portion of our assets.</li> */}
         </ul>
 
         <h2 id="section-4">4. Data Security</h2>
@@ -111,7 +115,7 @@ function App() {
         <p>To ensure compliance with Google Play&apos;s User Data policy, this privacy policy:</p>
         <ul>
           <li>Is linked on the app&apos;s store listing page in Play Console and within the app itself.</li>
-          <li>References the entity named in the app&apos;s Google Play listing (Lixta Network LLP).</li>
+          <li>References the entity named in the app&apos;s Google Play listing (Medimorphic Clinic).</li>
           <li>Includes a clear labeling as a privacy policy.</li>
           <li>Provides a privacy point of contact or a mechanism to submit inquiries.</li>
           <li>Is readable in a standard browser without any plug-ins or special handlers (no PDFs).</li>
