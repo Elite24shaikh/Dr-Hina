@@ -250,6 +250,106 @@
     padding-top: 22px;
   }
 
+  .delete-account-page {
+    min-height: 100vh;
+    background: #f8faf7;
+    color: #143928;
+    font-family: 'Inter', system-ui, sans-serif;
+    padding: 28px clamp(20px, 5vw, 80px) 48px;
+  }
+
+  .delete-account-content {
+    align-items: center;
+    display: grid;
+    gap: clamp(48px, 10vw, 150px);
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+    margin: 0 auto;
+    max-width: 1060px;
+    min-height: calc(100vh - 190px);
+    padding: 64px 0 86px;
+  }
+
+  .delete-account-copy h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(52px, 7vw, 88px);
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    line-height: 0.92;
+    margin: 0 0 30px;
+  }
+
+  .delete-account-copy h1 em {
+    color: #d65b4a;
+    font-style: italic;
+  }
+
+  .delete-account-copy p {
+    color: rgba(20, 57, 40, 0.68);
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 500px;
+  }
+
+  .delete-account-form {
+    background: #fff;
+    border: 1px solid rgba(20, 57, 40, 0.12);
+    box-shadow: 0 20px 60px rgba(20, 57, 40, 0.08);
+    display: grid;
+    gap: 10px;
+    padding: clamp(24px, 4vw, 40px);
+  }
+
+  .delete-account-form label {
+    color: #143928;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .delete-account-form input {
+    border: 1px solid rgba(20, 57, 40, 0.2);
+    border-radius: 0;
+    color: #143928;
+    font: inherit;
+    font-size: 14px;
+    padding: 14px 15px;
+    outline: none;
+  }
+
+  .delete-account-form input:focus {
+    border-color: #10a875;
+    box-shadow: 0 0 0 3px rgba(16, 168, 117, 0.12);
+  }
+
+  .delete-account-form button {
+    background: #d65b4a;
+    border: 0;
+    color: #fff;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 22px;
+    padding: 15px 20px;
+    transition: background 0.2s ease, opacity 0.2s ease;
+  }
+
+  .delete-account-form button:hover:not(:disabled) {
+    background: #b84638;
+  }
+
+  .delete-account-form button:disabled {
+    cursor: default;
+    opacity: 0.65;
+  }
+
+  .delete-account-form small {
+    color: rgba(20, 57, 40, 0.45);
+    font-size: 11px;
+    margin-top: 4px;
+    text-align: center;
+  }
+
   @media (max-width: 760px) {
     .privacy-page {
       padding: 20px 20px 34px;
@@ -278,6 +378,28 @@
       align-items: flex-start;
       flex-direction: column;
       gap: 8px;
+    }
+
+    .delete-account-page {
+      padding: 20px 20px 34px;
+    }
+
+    .delete-account-content {
+      display: block;
+      min-height: auto;
+      padding: 70px 0 82px;
+    }
+
+    .delete-account-copy {
+      margin-bottom: 48px;
+    }
+
+    .delete-account-copy h1 {
+      font-size: clamp(50px, 15vw, 72px);
+    }
+
+    .delete-account-footer {
+      margin-top: 0;
     }
   }
 

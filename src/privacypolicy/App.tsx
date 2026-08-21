@@ -136,7 +136,7 @@ function App() {
       </div>
 
       <footer className="privacy-footer">
-        <span>&copy; 2024 Medimorphic Clinic</span>
+        <span>&copy; 2026 Medimorphic Clinic</span>
         <a href="mailto:medimorphicclinic@gmail.com">medimorphicclinic@gmail.com</a>
       </footer>
     </main>
